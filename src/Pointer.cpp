@@ -1,4 +1,6 @@
 #include <iostream>
+#define LOG(x) std::cout << x << std::endl;
+
 void log(int x);
 void log(void* x);
 
@@ -9,14 +11,14 @@ void increase(int* value) {
 
 // 使用引用来直接操作传入参数的内存地址
 void increase(int& value) {
-	log(&value);
+	LOG(&value);
 	value++;
 }
 void pointer() {
 	int var = 8;
 	log(var);
 	int* ptr = nullptr;// 指针类型对指针本身不重要，指针只是一个指向地址空间的整数，指针有类型是需要告诉编译器以什么类型操作这个地址
-	ptr = &var;// ptr为地址 *ptr为使用这个地址指向的位置
+	ptr = &var;// ptr为地址位置 *ptr为使用这个地址指向的位置
 	*ptr = 10;
 	log(var);
 	log(ptr);
