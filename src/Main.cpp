@@ -2,6 +2,7 @@
 #include <windows.h> //²âÊÔCommit
 
 int main() {
+
 //    std::cout << "hello world start"<<std::endl;
 //    int i = 0;
 //    bool judgeNumber(int number);
@@ -23,7 +24,11 @@ int main() {
 //    std::cin.get();
 //    i = 0;
     void pointer();
-    pointer();
+    //pointer();
+    void Reference();
+    //Reference();
+    void testModify();
+    testModify();
 }
 
 bool judgeNumber(int number) {
