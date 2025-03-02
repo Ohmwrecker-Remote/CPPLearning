@@ -26,9 +26,9 @@ int main() {
     void pointer();
     //pointer();
     void Reference();
-    //Reference();
+    Reference();
     void testModify();
-    testModify();
+    //testModify();
 }
 
 bool judgeNumber(int number) {

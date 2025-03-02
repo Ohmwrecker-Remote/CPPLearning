@@ -148,6 +148,9 @@
     <ClCompile Include="src\Pointer.cpp" />
     <ClCompile Include="src\Reference.cpp" />
   </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Log.h" />
+  </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
   </ImportGroup>
