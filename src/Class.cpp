@@ -1,4 +1,6 @@
 #include <iostream>
+
+// 类默认是private
 class Player
 {
 public:
@@ -10,6 +12,12 @@ public:
 		ID = NID;
 		speed = Nspeed;
 	}
+};
+
+// 结构体默认为public
+struct Point {
+	int x;
+	int y;
 };
 
 void testModify() {

@@ -1,5 +1,3 @@
-#define LOG(x) std::cout << x << std::endl;
-
 void log(int x);
 void log(void* x);
 
