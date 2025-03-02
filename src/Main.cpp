@@ -26,9 +26,17 @@ int main() {
     void pointer();
     //pointer();
     void Reference();
-    Reference();
+    //Reference();
     void testModify();
     //testModify();
+    void Static_i_Function();
+    for (int i = 0; i < 5; i++) {
+        Static_i_Function();
+    }
+    void NonStatic_i_Function();
+    for (int i = 0; i < 5; i++) {
+        NonStatic_i_Function();
+    }
 }
 
 bool judgeNumber(int number) {
