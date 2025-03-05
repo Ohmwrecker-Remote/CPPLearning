@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h> //测试Commit
 #include "Log.h"
+#include "VirtualFunction.cpp"
 
 int main() {
 
@@ -40,12 +41,22 @@ int main() {
         //NonStatic_i_Function();
     }
 
-    Log log(Log::LogLevel::LogLevel_Info); // 使用::（类名和作用域解析符）对Log命名空间内的LogLevel进行访问
-    log.Info("Hello, world!");
-    log.Warn("Warning message");
-    log.Error("Error message");
-    PrintLogLevel printLogLevel;
-    printLogLevel.Print();
+    //Log log(Log::LogLevel::LogLevel_Info); 
+    // 使用::（类名和作用域解析符）对Log命名空间内的LogLevel进行访问
+    //log.Info("Hello, world!");
+    //log.Warn("Warning message");
+    //log.Error("Error message");
+    //PrintLogLevel printLogLevel;
+    //printLogLevel.Print();
+
+    //使用虚函数对基类和派生类进行测试
+    Entity* e = new Entity();
+    std::cout << "Entity::name = " << e->GetName() << std::endl;
+
+    Player* p = new Player("Player");
+    std::cout << "Player::name = " << p->GetName() << std::endl;
+
+    std::cin.get();
     return 0;
 }
 

@@ -30,9 +30,12 @@
     <ClCompile Include="src\Static.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\VirtualFunction.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Log.h">
+    <ClInclude Include="src\Log.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
