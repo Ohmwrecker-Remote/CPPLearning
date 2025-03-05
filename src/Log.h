@@ -1,7 +1,6 @@
 #pragma once
 #include <iostream>
-class Log
-{
+class Log{
 public:
 	//const int LogLevel_Error = 0;
 	//const int LogLevel_Warning = 1;
@@ -23,7 +22,7 @@ public:
 	Log(LogLevel SetDefaultLevel) {
 		m_LogLevel = SetDefaultLevel;
 	}
-
+	
 private:
 
 	LogLevel m_LogLevel;
@@ -50,5 +49,30 @@ public:
 			std::cout << "[Info]: " << message << std::endl;
 		}
 	}
+
+	const char* getLoglevelString() {
+		if (m_LogLevel == LogLevel_Error) {
+			return "Error";
+		}
+		else if (m_LogLevel == LogLevel_Warning) {
+			return "Warning";
+		}
+		else if (m_LogLevel == LogLevel_Info) {
+			return "Info";
+		}
+		else {
+			return "Unknown";
+		}
+	}
 };
 
+// 继承Log类，加入Printl函数，打印日志级别
+class PrintLogLevel : public Log {
+public:
+	const char* LogLevelString = "Unknown";
+
+	void Print() {
+		const char* LogLevelString = getLoglevelString();
+		std::cout << LogLevelString << std::endl;
+	}
+};
