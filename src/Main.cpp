@@ -44,7 +44,8 @@ int main() {
     log.Info("Hello, world!");
     log.Warn("Warning message");
     log.Error("Error message");
-    
+    PrintLogLevel printLogLevel;
+    printLogLevel.Print();
     return 0;
 }
 
