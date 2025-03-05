@@ -51,11 +51,17 @@ int main() {
 
     //使用虚函数对基类和派生类进行测试
     Entity* e = new Entity();
-    std::cout << "Entity::name = " << e->GetName() << std::endl;
+    std::cout << "Entity::name = " << e->getName() << std::endl;
 
     Player* p = new Player("Player");
-    std::cout << "Player::name = " << p->GetName() << std::endl;
+    std::cout << "Player::name = " << p->getName() << std::endl;
 
+    A* a = new A();
+
+    PrintClassName(e);
+    PrintClassName(p);
+    PrintClassName(a);
+    // 直接使用new a()会导致内存泄漏，最好显式创建指针变量并删除
     std::cin.get();
     return 0;
 }
