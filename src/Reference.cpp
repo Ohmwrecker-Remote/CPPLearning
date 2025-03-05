@@ -7,11 +7,11 @@ void Reference() {
 	int b = 5;
 
 	// 创建新的引用，对ref操作等于直接对a操作
-	int& ref1 = a;
+	int& ref1 = a; 
 	ref1 = 10;
 	log(a);
 	// 等同于以下代码
-	int* ref2 = &a;
+	int* ref2 = &a; // &a相当于返回a的内存地址给ref2
 	*ref2 = 9;
 	log(a);
 }

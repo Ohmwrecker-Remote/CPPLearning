@@ -1,6 +1,7 @@
 #include <iostream>
 #include <windows.h> //测试Commit
-#define LOG(x) std::cout << x << std::endl;
+#include "Log.h"
+
 int main() {
 
 //    std::cout << "hello world start"<<std::endl;
@@ -30,13 +31,21 @@ int main() {
     void testModify();
     //testModify();
     void Static_i_Function();
+
     for (int i = 0; i < 5; i++) {
-        Static_i_Function();
+        //Static_i_Function();
     }
     void NonStatic_i_Function();
     for (int i = 0; i < 5; i++) {
-        NonStatic_i_Function();
+        //NonStatic_i_Function();
     }
+
+    Log log(Log::LogLevel::LogLevel_Info); // 使用::（类名和作用域解析符）对Log命名空间内的LogLevel进行访问
+    log.Info("Hello, world!");
+    log.Warn("Warning message");
+    log.Error("Error message");
+    
+    return 0;
 }
 
 bool judgeNumber(int number) {
