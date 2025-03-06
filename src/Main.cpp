@@ -59,8 +59,11 @@ int main() {
     A* a = new A();
 
     PrintClassName(e);
+    delete e;
     PrintClassName(p);
+    delete p;
     PrintClassName(a);
+    delete a;
     // 直接使用new a()会导致内存泄漏，最好显式创建指针变量并删除
     std::cin.get();
     return 0;
@@ -78,5 +81,9 @@ void log(int x) {
 }
 
 void log(void* x) {
+    std::cout << x << std::endl;
+}
+
+void log(std::string x) {
     std::cout << x << std::endl;
 }

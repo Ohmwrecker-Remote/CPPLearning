@@ -4,7 +4,7 @@
 //纯虚函数，类似于接口，子类必须实现
 class Printable {
 public:
-	//纯虚函数，子类必须实现
+	//纯虚函数，子类必须实现该函数，否则无法实例化
 	virtual std::string getClassName() = 0;
 };
 
