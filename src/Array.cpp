@@ -25,7 +25,7 @@ public:
 		*(int*)((char*)ptr + 8) = 9;
 	}
 	int getCount(int* ptr) {
-		return sizeof(&ptr)/sizeof(int);
+		return sizeof(ptr)/sizeof(int);
 	}
 	~Array() {
 		delete[] another;
