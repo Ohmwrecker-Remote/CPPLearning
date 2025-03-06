@@ -2,6 +2,7 @@
 #include <windows.h> //测试Commit
 #include "Log.h"
 #include "VirtualFunction.cpp"
+#include "Array.cpp"
 
 int main() {
 
@@ -50,21 +51,25 @@ int main() {
     //printLogLevel.Print();
 
     //使用虚函数对基类和派生类进行测试
-    Entity* e = new Entity();
-    std::cout << "Entity::name = " << e->getName() << std::endl;
+    //Entity* e = new Entity();
+    //std::cout << "Entity::name = " << e->getName() << std::endl;
 
-    Player* p = new Player("Player");
-    std::cout << "Player::name = " << p->getName() << std::endl;
+    //Player* p = new Player("Player");
+    //std::cout << "Player::name = " << p->getName() << std::endl;
 
-    A* a = new A();
+    //A* a = new A();
 
-    PrintClassName(e);
-    delete e;
-    PrintClassName(p);
-    delete p;
-    PrintClassName(a);
-    delete a;
+    //PrintClassName(e);
+    //delete e;
+    //PrintClassName(p);
+    //delete p;
+    //PrintClassName(a);
+    //delete a;
     // 直接使用new a()会导致内存泄漏，最好显式创建指针变量并删除
+
+    Array* array = new Array();
+    array->changeValue();
+    std::cout << "array->count = " << array->getCount(array->another) << std::endl;
     std::cin.get();
     return 0;
 }

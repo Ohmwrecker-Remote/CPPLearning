@@ -33,6 +33,12 @@
     <ClCompile Include="src\VirtualFunction.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\Visibility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Array.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Log.h">
