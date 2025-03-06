@@ -69,7 +69,6 @@ int main() {
 
     Array* array = new Array();
     array->changeValue();
-    std::cout << "array->count = " << array->getCount(array->another) << std::endl;
     std::cin.get();
     return 0;
 }
