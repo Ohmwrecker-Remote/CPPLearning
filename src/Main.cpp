@@ -3,6 +3,7 @@
 #include "Log.h"
 #include "VirtualFunction.cpp"
 #include "Array.cpp"
+#include "String.cpp"
 
 int main() {
 
@@ -67,9 +68,14 @@ int main() {
     //delete a;
     // 直接使用new a()会导致内存泄漏，最好显式创建指针变量并删除
 
-    Array* array = new Array();
-    array->changeValue();
-    std::cin.get();
+    //Array* array = new Array();
+    //array->changeValue();
+    //std::cin.get();
+
+    String* str = new String();
+    std::cout << "String::str = " << str->name << std::endl;
+    std::cout << "String::str = " << str->name2 << std::endl;
+
     return 0;
 }
 

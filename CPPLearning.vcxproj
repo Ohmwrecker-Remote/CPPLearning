@@ -149,6 +149,7 @@
     <ClCompile Include="src\Pointer.cpp" />
     <ClCompile Include="src\Reference.cpp" />
     <ClCompile Include="src\Static.cpp" />
+    <ClCompile Include="src\String.cpp" />
     <ClCompile Include="src\VirtualFunction.cpp" />
     <ClCompile Include="src\Visibility.cpp" />
   </ItemGroup>
