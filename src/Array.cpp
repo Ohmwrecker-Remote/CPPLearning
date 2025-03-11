@@ -9,9 +9,11 @@ public:
 	int arr[10];
 	//堆上分配的数组，another为指向分配到数组地址的指针
 	int* another = new int[10];
+	// 创建对象同理，使用new创建堆上分配的数组，最后手动使用delete销毁
 
 	std::array<int, 10> arr2; // C++11引入的数组类型，可以自动初始化为0，提供边界检查以及常见功能
 
+	// arr2()在初始化列表中调用，自动初始化为0
 	Array(): arr2() {
 		for (int i = 0; i < 10; i++) {
 			arr[i] = 0;

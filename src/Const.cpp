@@ -9,7 +9,8 @@ public:
 	// const作用于变量时，表示变量不能被修改，即该变量只能指向一个固定地址的内存空间
 	int* const y = new int;
 
-	int z;
+	// 如果有需要在const成员函数中修改对象状态，则需要在函数前加mutable关键字
+	mutable int z;
 	Const() {
 		// 不可修改指向的对象的值
 		//*x = 10；
