@@ -25,9 +25,9 @@ private:
 public:
 	//添加const修饰符以防止修改成员变量
 	Player(const std::string name) : m_name(name) {}
-	//重写基类的虚函数，添加上override以区分是否重写
+	//重写基类的虚函数，添加上override以区分是否重写，可以不写但不建议
 	std::string getName() override { return m_name; }
-	//实现纯虚函数，如果不实现，子类将无法实例化，且如果不重写父类对纯虚函数的实现，调用该函数将会相当于调用基类的实现，而不是子类的实现
+	//实现纯虚函数，如果不实现，子类将无法实例化，且如果不重写父类对纯虚函数的实现，调用该函数将会相当于调用基类的实现，而不是派生类的实现
 	std::string getClassName() override { return "class name is Player"; }
 };
 

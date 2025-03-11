@@ -146,6 +146,7 @@
     <ClCompile Include="src\Array.cpp" />
     <ClCompile Include="src\Class.cpp" />
     <ClCompile Include="src\Const.cpp" />
+    <ClCompile Include="src\Implicit_Explicit.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Pointer.cpp" />
     <ClCompile Include="src\Reference.cpp" />
