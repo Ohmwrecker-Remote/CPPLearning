@@ -20,6 +20,6 @@ public:
 
 // 如果不加引用，实际上传入的是原参数的副本，影响性能
 // const表示参数不会在这里被修改
-void printString(const std::string& str) {
+static void printString(const std::string& str) {
 	std::cout  << str << std::endl;
 }

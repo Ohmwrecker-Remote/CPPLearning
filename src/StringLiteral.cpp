@@ -24,9 +24,9 @@ class StringLiteral {
 	const char32_t* name6 = U"Ohmwrecker"; // 32Î»×Ö·û×Ö·û´® UTF-32
 	StringLiteral() {
 		name[0] = 'H';
-		strcpy(name3, "Ohmwrecker");
+		strcpy_s(name3, 11 ,"Ohmwrecker");
 	}
-~StringLiteral() {
+	~StringLiteral() {
 		delete[] name3;
 	}
 };

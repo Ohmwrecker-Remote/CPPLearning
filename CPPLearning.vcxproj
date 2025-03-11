@@ -148,6 +148,7 @@
     <ClCompile Include="src\Const.cpp" />
     <ClCompile Include="src\Implicit_Explicit.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\Operator.cpp" />
     <ClCompile Include="src\Pointer.cpp" />
     <ClCompile Include="src\Reference.cpp" />
     <ClCompile Include="src\Static.cpp" />
