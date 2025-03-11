@@ -90,9 +90,12 @@ int main() {
     Vector2 result2 = v1 * v2;
     std::cout << "result1: " << result1.x << ", " << result1.y << std::endl;
     std::cout << "result2: " << result2.x << ", " << result2.y << std::endl;
+
     // 直接将Vector2传入ostream不可行，需要重载<<运算符
     std::cout << result1 << std::endl;
     std::cout << result2 << std::endl;
+
+
     return 0;
 }
 

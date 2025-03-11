@@ -21,6 +21,14 @@ struct Vector2 {
         return Multiply(other);
     }
 
+    bool operator==(const Vector2& other) {
+        return x == other.x && y == other.y;
+    }
+
+    bool operator!=(const Vector2& other) {
+        return !(*this == other);
+    }
+
     Vector2(float x, float y) : x(x), y(y) {}
 };
 
