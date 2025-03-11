@@ -5,6 +5,7 @@
 #include "Array.cpp"
 #include "String.cpp"
 #include "Operator.cpp"
+#include "This.cpp"
 
 int main() {
 
@@ -95,11 +96,13 @@ int main() {
     std::cout << result1 << std::endl;
     std::cout << result2 << std::endl;
 
+    // This
+    This_Operator(114514,1919810);
 
     return 0;
 }
 
-bool judgeNumber(int number) {
+static bool judgeNumber(int number) {
     if (number < 5) {
         return 1;
     }
