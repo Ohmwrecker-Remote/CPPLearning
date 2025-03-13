@@ -1,4 +1,5 @@
 #include <iostream>
+#include <memory>
 #include <windows.h> //测试Commit
 #include "Log.h"
 #include "VirtualFunction.cpp"
@@ -6,6 +7,8 @@
 #include "String.cpp"
 #include "Operator.cpp"
 #include "This.cpp"
+#include "Scope.cpp"
+#include "CopyConstructor.cpp"
 
 int main() {
 
@@ -85,20 +88,41 @@ int main() {
 
 
     // Operator
-    Vector2 v1(1.0f, 2.0f);
-    Vector2 v2(3.0f, 4.0f);
-    Vector2 result1 = v1 + v2;
-    Vector2 result2 = v1 * v2;
-    std::cout << "result1: " << result1.x << ", " << result1.y << std::endl;
-    std::cout << "result2: " << result2.x << ", " << result2.y << std::endl;
+    //Vector2 v1(1.0f, 2.0f);
+    //Vector2 v2(3.0f, 4.0f);
+    //Vector2 result1 = v1 + v2;
+    //Vector2 result2 = v1 * v2;
+    //std::cout << "result1: " << result1.x << ", " << result1.y << std::endl;
+    //std::cout << "result2: " << result2.x << ", " << result2.y << std::endl;
 
     // 直接将Vector2传入ostream不可行，需要重载<<运算符
-    std::cout << result1 << std::endl;
-    std::cout << result2 << std::endl;
+    //std::cout << result1 << std::endl;
+    //std::cout << result2 << std::endl;
 
     // This
-    This_Operator(114514,1919810);
+    //This_Operator(114514,1919810);
 
+    //Scope
+    //{
+    //    // 使用作用域指针，让即使是堆上分配的对象也会在作用域结束时自动释放
+    //    Scope e = new ScopeEntity();
+    //    // 也可以使用unique_ptr,当它离开作用域时，会自动释放对象
+    //    std::unique_ptr<ScopeEntity> unique_ptr(ScopeEntity());
+    //    // 使用make_unique可以在构造函数出现异常时自动释放对象
+    //    std::unique_ptr<ScopeEntity> unique_ptr2 = std::make_unique<ScopeEntity>();
+    //    // 使用shared_ptr可以复制指针，当引用计数为0时，会自动释放对象
+    //    std::shared_ptr<ScopeEntity> shared_ptr(ScopeEntity());
+    //    // 使用make_shared可以在构造函数出现异常时自动释放对象
+    //    std::shared_ptr<ScopeEntity> shared_ptr2 = std::make_shared<ScopeEntity>();
+    //    // 优先使用unique_ptr，因为开销小，而且可以避免忘记释放内存
+    //}
+
+    // CopyConstructor
+    CopyConstructor string = "Ohmwrecker";
+    CopyConstructor string2 = string;
+    string2[0] = 'X';
+    std::cout << "string = " << string <<std::endl;
+    std::cout << "string2 = " << string2 << std::endl;
     return 0;
 }
 

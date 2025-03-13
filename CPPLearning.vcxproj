@@ -146,11 +146,13 @@
     <ClCompile Include="src\Array.cpp" />
     <ClCompile Include="src\Class.cpp" />
     <ClCompile Include="src\Const.cpp" />
+    <ClCompile Include="src\CopyConstructor.cpp" />
     <ClCompile Include="src\Implicit_Explicit.cpp" />
     <ClCompile Include="src\Main.cpp" />
     <ClCompile Include="src\Operator.cpp" />
     <ClCompile Include="src\Pointer.cpp" />
     <ClCompile Include="src\Reference.cpp" />
+    <ClCompile Include="src\Scope.cpp" />
     <ClCompile Include="src\Static.cpp" />
     <ClCompile Include="src\String.cpp" />
     <ClCompile Include="src\StringLiteral.cpp" />
