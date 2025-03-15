@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="src\Array.cpp" />
+    <ClCompile Include="src\Arrow_Operator.cpp" />
     <ClCompile Include="src\Class.cpp" />
     <ClCompile Include="src\Const.cpp" />
     <ClCompile Include="src\Implicit_Explicit.cpp" />
@@ -155,6 +156,7 @@
     <ClCompile Include="src\String.cpp" />
     <ClCompile Include="src\StringLiteral.cpp" />
     <ClCompile Include="src\This.cpp" />
+    <ClCompile Include="src\Vector.cpp" />
     <ClCompile Include="src\VirtualFunction.cpp" />
     <ClCompile Include="src\Visibility.cpp" />
   </ItemGroup>
