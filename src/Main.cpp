@@ -164,6 +164,7 @@ int main() {
     string2[0] = 'X';
     std::cout << "string = " << string <<std::endl;
     std::cout << "string2 = " << string2 << std::endl;
+
     return 0;
 }
 
