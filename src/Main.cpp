@@ -1,5 +1,6 @@
 #include <iostream>
 #include <windows.h> //测试Commit
+#include "GLFW/glfw3.h"
 #include "Log.h"
 #include "VirtualFunction.cpp"
 #include "Array.cpp"
@@ -8,6 +9,8 @@
 #include "This.cpp"
 #include "Arrow_Operator.cpp"
 #include "Vector.cpp"
+
+extern "C" int glfwInit();
 
 int main() {
 
@@ -138,6 +141,10 @@ int main() {
     // 也可以单独删除元素
     // begin()为数组第一个元素的指针
     vertex2.erase(vertex2.begin() + 1);
+
+    glfwInit();
+
+    std::cin.get();
 
     return 0;
 }
