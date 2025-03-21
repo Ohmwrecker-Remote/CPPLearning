@@ -14,7 +14,6 @@
 #include "Vector.cpp"
 #include "GLFW/glfw3.h"
 
-
 extern "C" int glfwInit();
 
 int main() {
