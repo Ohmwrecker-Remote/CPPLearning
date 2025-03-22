@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-class Log{
+class Logger{
 public:
 	//const int LogLevel_Error = 0;
 	//const int LogLevel_Warning = 1;
@@ -15,11 +15,11 @@ public:
 
 	// 构造函数默认设置为Info级别，使用构造函数可以避免在每个函数中都调用SetLevel函数
 // Java支持默认参数，C++不支持默认参数，所以只能使用构造函数
-	Log() {
+	Logger() {
 		m_LogLevel = LogLevel_Info;
 	}
 
-	Log(LogLevel SetDefaultLevel) {
+	Logger(LogLevel SetDefaultLevel) {
 		m_LogLevel = SetDefaultLevel;
 	}
 	
@@ -67,7 +67,7 @@ public:
 };
 
 // 继承Log类，加入Printl函数，打印日志级别
-class PrintLogLevel : public Log {
+class PrintLogLevel : public Logger {
 public:
 	const char* LogLevelString = "Unknown";
 

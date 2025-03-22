@@ -163,6 +163,7 @@
     <ClCompile Include="src\CopyConstructor.cpp" />
     <ClCompile Include="src\Implicit_Explicit.cpp" />
     <ClCompile Include="src\Main.cpp" />
+    <ClCompile Include="src\MultipleReturnValue.cpp" />
     <ClCompile Include="src\Operator.cpp" />
     <ClCompile Include="src\Pointer.cpp" />
     <ClCompile Include="src\Reference.cpp" />
@@ -177,6 +178,11 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Log.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Engine\Engine.vcxproj">
+      <Project>{4aa51c29-0364-47a3-b86e-af088c7676e5}</Project>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -12,9 +12,9 @@
 #include "CopyConstructor.cpp"
 #include "Arrow_Operator.cpp"
 #include "Vector.cpp"
-#include "GLFW/glfw3.h"
 
-extern "C" int glfwInit();
+
+//extern "C" int glfwInit();
 
 int main() {
 
@@ -173,6 +173,7 @@ int main() {
     std::cout << a << std::endl;
 
     glfwInit();
+    
 
     std::cin.get();
 
@@ -186,14 +187,21 @@ static bool judgeNumber(int number) {
     else return 0;
 }
 
-void log(int x) {
+// 使用模板函数对不同类型进行打印，实际代码在运行时才确定类型
+template<typename T>
+static void Log(T x) {
     std::cout << x << std::endl;
 }
 
-void log(void* x) {
-    std::cout << x << std::endl;
-}
-
-void log(std::string x) {
-    std::cout << x << std::endl;
-}
+// //使用模板函数避免重复代码
+//void log(int x) {
+//    std::cout << x << std::endl;
+//}
+//
+//void log(void* x) {
+//    std::cout << x << std::endl;
+//}
+//
+//void log(std::string x) {
+//    std::cout << x << std::endl;
+//}
