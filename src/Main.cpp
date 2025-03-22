@@ -12,6 +12,8 @@
 #include "CopyConstructor.cpp"
 #include "Arrow_Operator.cpp"
 #include "Vector.cpp"
+#include "Template.cpp"
+#include "FunctionPointer.cpp"
 
 
 //extern "C" int glfwInit();
@@ -114,7 +116,7 @@ int main() {
     //    Scope e = new ScopeEntity();
     //    // 也可以使用unique_ptr,当它离开作用域时，会自动释放对象
     //    std::unique_ptr<ScopeEntity> unique_ptr(ScopeEntity());
-    //    // 使用make_unique可以在构造函数出现异常时自动释放对象
+    //    // 使用make_unique方法初始化可以在构造函数出现异常时自动释放对象
     //    std::unique_ptr<ScopeEntity> unique_ptr2 = std::make_unique<ScopeEntity>();
     //    // 使用shared_ptr可以复制指针，当引用计数为0时，会自动释放对象
     //    std::shared_ptr<ScopeEntity> shared_ptr(ScopeEntity());
@@ -134,13 +136,13 @@ int main() {
     //}
 
     //// Vector
-    //// 实际就是ArrayList
+    //// 实际就是ArrayList，和std::array不同，vector分配在堆上，array分配在栈上
     //// 静态分配数组
     //Vertex* vertex = new Vertex[10];
     //// 初始化数组
     //vertex[0] = { 1.0f, 2.0f, 3.0f };
     //delete[] vertex;
-    //// 使用std::vector动态分配数组
+    //// 使用std::vector动态分配数组，可以自动扩容
     //// 使用Vertex或Vertex*，前者为顺序存储，后者为随机存储
     //// std::vector<Vertex> vertex(10)是创建了10个Vertex对象
     //std::vector<Vertex> vertex2;
@@ -169,14 +171,14 @@ int main() {
     //std::cout << "string = " << string <<std::endl;
     //std::cout << "string2 = " << string2 << std::endl;
 
-    int a = glfwInit();
-    std::cout << a << std::endl;
+    //// GLFW包引入
+    //int a = glfwInit();
+    //std::cout << a << std::endl;  
 
-    glfwInit();
-    
+    // FunctionPointer
+    FunctionPointer functionPointer;
 
     std::cin.get();
-
     return 0;
 }
 
@@ -187,11 +189,6 @@ static bool judgeNumber(int number) {
     else return 0;
 }
 
-// 使用模板函数对不同类型进行打印，实际代码在运行时才确定类型
-template<typename T>
-static void Log(T x) {
-    std::cout << x << std::endl;
-}
 
 // //使用模板函数避免重复代码
 //void log(int x) {

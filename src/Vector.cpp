@@ -7,7 +7,7 @@ struct Vertex {
     Vertex() : x(0.0f), y(0.0f), z(0.0f) {}
 
     Vertex(float x, float y, float z) : x(x), y(y), z(z) {}
-    // 复制构造函数
+    // 复制构造函数，观察push_back和emplace_back的区别
     Vertex(const Vertex& other) : x(other.x), y(other.y), z(other.z) {
         std::cout << "Copy constructor called" << std::endl;
     }

@@ -72,6 +72,12 @@
     <ClCompile Include="src\MultipleReturnValue.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="src\Template.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="src\FunctionPointer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Log.h">
