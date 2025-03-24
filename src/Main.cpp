@@ -14,6 +14,7 @@
 #include "Vector.cpp"
 #include "Template.cpp"
 #include "FunctionPointer.cpp"
+#include "Thread.cpp"
 
 
 //extern "C" int glfwInit();
@@ -176,7 +177,10 @@ int main() {
     //std::cout << a << std::endl;  
 
     // FunctionPointer
-    FunctionPointer functionPointer;
+    //FunctionPointer functionPointer;
+
+    // Thread
+    Thread thread;
 
     std::cin.get();
     return 0;
