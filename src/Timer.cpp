@@ -8,14 +8,15 @@ private:
 	// 使用chrono的高精度时钟获取当前时间
 	std::chrono::time_point<std::chrono::steady_clock> start_time, end_time;
 	std::chrono::duration<float> duration = std::chrono::duration<float>::zero();
+	const char* functionName;
 public:
-	Timer() {
+	Timer(const char* functionName) : functionName(functionName) {
 		this->start_time = std::chrono::high_resolution_clock::now();
 	};
 	~Timer() {
 		// 计算并输出时间
 		this->end_time = std::chrono::high_resolution_clock::now();
 		this->duration = this->end_time - this->start_time;
-		std::cout << "Time taken: " << std::chrono::duration_cast<std::chrono::milliseconds>(this->duration).count() << " 毫秒" << std::endl;
+		std::cout << functionName << "Time taken: " << std::chrono::duration_cast<std::chrono::microseconds>(this->duration).count() << "微秒" << std::endl;
 	};
 };

@@ -2,14 +2,14 @@
 #include <thread>
 #include <functional>
 #include <chrono>
-#include "Timer.cpp"
+#include "Timer.h"
 
 class Thread {
 public:
 	bool is_Finieshed = false;
 
 	Thread() {
-		Timer timer;
+		Timer timer("Thread");
 		// 创建函数指针放入线程中
 		std::function<void()> workPointer = [this]() {
 			std::cout << std::this_thread::get_id() << " is working..." << std::endl;

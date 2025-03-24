@@ -15,6 +15,8 @@
 #include "Template.cpp"
 #include "FunctionPointer.cpp"
 #include "Thread.cpp"
+#include "Array2D.cpp"
+#include "Timer.h"
 
 
 //extern "C" int glfwInit();
@@ -180,7 +182,16 @@ int main() {
     //FunctionPointer functionPointer;
 
     // Thread
-    Thread thread;
+    //Thread thread;
+
+    // Array2D
+    {
+        Timer timer("Array2D");
+        Array2D<int> array2D(3, 3);
+        array2D.arr2D[0][0] = 1;
+        array2D.arr2D[0][1] = 2;
+        array2D.arr2D[0][2] = 3;
+    }
 
     std::cin.get();
     return 0;
