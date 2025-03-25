@@ -180,6 +180,7 @@
     <ClCompile Include="src\Timer.cpp" />
     <ClCompile Include="src\Union.cpp" />
     <ClCompile Include="src\Vector.cpp" />
+    <ClCompile Include="src\VirtualDistructor.cpp" />
     <ClCompile Include="src\VirtualFunction.cpp" />
     <ClCompile Include="src\Visibility.cpp" />
   </ItemGroup>

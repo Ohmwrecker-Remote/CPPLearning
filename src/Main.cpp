@@ -20,6 +20,7 @@
 #include "Timer.h"
 #include "Sort.cpp"
 #include "Union.cpp"
+#include "VirtualDistructor.cpp"
 
 //extern "C" int glfwInit();
 
@@ -198,7 +199,40 @@ int main() {
     //Sort sort;
 
     // Union
-    Union unionTest;
+    //Union unionTest;
+
+    // VirtualDistructor
+    Base* base = new Base();
+    delete base;
+
+    // 调用基类的构造函数和析构函数
+    //Base constructor called
+    //Base destructor called
+
+    std::cout << "-----------\n";
+    Derived* derived = new Derived();
+    delete derived;
+
+    // 调用基类的构造函数和析构函数，再调用派生类的构造函数和析构函数
+    //Base constructor called
+    //Derived constructor called
+    //Derived destructor called
+    //Base destructor called
+
+    std::cout << "-----------\n";
+    Base* poly = new Derived();
+    delete poly;
+
+    // 如果不为基类的析构函数添加virtual关键字，就会导致用基类引用，引用派生类实例时，无法调用派生类的析构函数，造成内存泄露
+    //Base constructor called
+    //Derived constructor called
+    //Base destructor called
+ 
+    // 正确添加上virtual关键字后,构造由内到外，析构由外到内，避免内存泄露
+    //Base constructor called
+    //Derived constructor called
+    //Derived destructor called
+    //Base destructor called
 
     std::cin.get();
     return 0;
