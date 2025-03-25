@@ -6,17 +6,17 @@ static void Log(T x) {
 }
 
 // 使用逆引用修改传入的number的内存地址的值
-void increase(int* value) {
+static void increase(int* value) {
 	(*value)++;// 打上括号可以先逆向引用后++
 }
 
 // 使用引用来直接操作传入参数的内存地址
-void increase(int& value) {
+static void increase(int& value) {
 	//Log(&value);
 	value++;
 }
 
-void pointer() {
+static void pointer() {
 
 	int var = 8;
 	Log(var);

@@ -48,7 +48,7 @@ public:
 	void SetSpeed(int& N_ID) {
 		speed = N_ID > 10 ? 10 : 5 ;
 		// 三元运算符嵌套,如果大于10，执行另一个三元运算符，否则为5，如果大于20，则为20，否则为10
-		speed = N_ID > 10 ? N_ID > 20 ? 20 : 10 : 5 ;
+		speed = N_ID > 10 ? ( N_ID > 20 ? 20 : 10 ) : 5 ;
 	}
 };
 
@@ -58,7 +58,7 @@ struct Point {
 	int y;
 };
 
-void testModify() {
+static void testModify() {
 	Player player;
 	player.Modify(3, 1);
 	std::cout << "ID:" << player.ID << "speed:" << player.speed << std::endl;

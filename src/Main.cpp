@@ -6,6 +6,7 @@
 #include "VirtualFunction.cpp"
 #include "Array.cpp"
 #include "String.cpp"
+#include "Static.cpp"
 #include "Operator.cpp"
 #include "This.cpp"
 #include "Scope.cpp"
@@ -18,7 +19,6 @@
 #include "Array2D.cpp"
 #include "Timer.h"
 #include "Sort.cpp"
-
 
 //extern "C" int glfwInit();
 
@@ -51,7 +51,6 @@ int main() {
     //Reference();
     void testModify();
     //testModify();
-    void Static_i_Function();
 
     for (int i = 0; i < 5; i++) {
         //Static_i_Function();
@@ -195,7 +194,7 @@ int main() {
     //}
 
     // Sort
-    Sort sort;
+    //Sort sort;
 
     std::cin.get();
     return 0;
