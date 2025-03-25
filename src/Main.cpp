@@ -19,6 +19,7 @@
 #include "Array2D.cpp"
 #include "Timer.h"
 #include "Sort.cpp"
+#include "Union.cpp"
 
 //extern "C" int glfwInit();
 
@@ -195,6 +196,9 @@ int main() {
 
     // Sort
     //Sort sort;
+
+    // Union
+    Union unionTest;
 
     std::cin.get();
     return 0;
