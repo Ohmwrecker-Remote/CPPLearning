@@ -234,6 +234,8 @@ int main() {
     //Derived destructor called
     //Base destructor called
 
+    // Cast
+
     std::cin.get();
     return 0;
 }

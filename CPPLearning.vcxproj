@@ -159,6 +159,7 @@
     <ClCompile Include="src\Array.cpp" />
     <ClCompile Include="src\Array2D.cpp" />
     <ClCompile Include="src\Arrow_Operator.cpp" />
+    <ClCompile Include="src\Cast.cpp" />
     <ClCompile Include="src\Class.cpp" />
     <ClCompile Include="src\Const.cpp" />
     <ClCompile Include="src\CopyConstructor.cpp" />
