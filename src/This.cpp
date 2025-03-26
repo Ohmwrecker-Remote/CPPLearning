@@ -1,4 +1,4 @@
-#include <iostream>
+#include "stdafx.h"
 
 class This_Operator;
 // 类This_Operator需要提前声明

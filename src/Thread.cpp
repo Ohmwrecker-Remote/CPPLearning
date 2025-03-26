@@ -1,7 +1,4 @@
-#include <iostream>
-#include <thread>
-#include <functional>
-#include <chrono>
+#include "stdafx.h"
 #include "Timer.h"
 
 class Thread {

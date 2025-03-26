@@ -1,4 +1,4 @@
-#include <iostream>
+#include "stdafx.h"
 
 // 使用模板，在实例化时指定模板参数
 template<int N>

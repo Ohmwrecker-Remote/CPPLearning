@@ -1,4 +1,4 @@
-#include <iostream>
+#include "stdafx.h"
 
 template<typename T>
 static void Log(T x) {

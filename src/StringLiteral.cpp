@@ -1,6 +1,4 @@
-#include <iostream>
-#include <string>
-#include <stdlib.h>
+#include "stdafx.h"
 
 using namespace std::string_literals; // 导入命名空间，使得可以直接使用"hello"s表示字符串字面量
 

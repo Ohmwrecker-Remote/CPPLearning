@@ -1,4 +1,4 @@
-#include <iostream>
+#include "stdafx.h"
 
 struct Vector3 {
     float x, y, z;

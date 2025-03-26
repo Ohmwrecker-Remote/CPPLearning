@@ -1,6 +1,4 @@
-#include <string>
-#include <vector>
-#include <array>
+#include "stdafx.h"
 
 // 创建一个结构体来存储不同类型的返回值
 struct returnType {

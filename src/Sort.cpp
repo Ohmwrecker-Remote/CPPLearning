@@ -1,6 +1,4 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
+#include "stdafx.h"
 
 class Sort {
 public:

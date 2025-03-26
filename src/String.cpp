@@ -1,5 +1,4 @@
-#include <iostream>
-#include <string>
+#include "stdafx.h"
 
 class String {
 public:

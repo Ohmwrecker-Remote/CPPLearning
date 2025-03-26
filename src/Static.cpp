@@ -1,4 +1,4 @@
-#include <iostream>
+#include "stdafx.h"
 
 // 静态实际运用
 // 单例模式

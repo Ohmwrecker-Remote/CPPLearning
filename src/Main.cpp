@@ -1,6 +1,4 @@
-#include <iostream>
-#include <memory>
-#include <windows.h> //≤‚ ‘Commit
+#include "stdafx.h"
 #include "GLFW/glfw3.h"
 #include "Log.h"
 #include "VirtualFunction.cpp"
