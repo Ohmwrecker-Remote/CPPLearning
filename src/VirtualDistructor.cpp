@@ -1,4 +1,4 @@
-#include <iostream>
+#include "stdafx.h"
 
 // 虚析构函数构造函数
 // Main函数具体观察析构函数调用顺序

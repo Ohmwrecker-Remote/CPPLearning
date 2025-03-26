@@ -1,5 +1,4 @@
-# include <iostream>
-# include <string>
+#include "stdafx.h"
 
 //纯虚函数，类似于接口，子类必须实现
 class Printable {

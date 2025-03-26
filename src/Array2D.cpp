@@ -1,4 +1,4 @@
-#include <iostream>
+#include "stdafx.h"
 
 // 一般不使用二维及以上数组，因为分配的地址空间不连续，效率低下，可以转为用一维数组实现
 template<typename T>

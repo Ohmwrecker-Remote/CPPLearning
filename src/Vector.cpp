@@ -1,6 +1,4 @@
-#include <Vector>
-#include <iostream>
-#include <string>
+#include "stdafx.h"
 
 struct Vertex {
     float x, y, z;
