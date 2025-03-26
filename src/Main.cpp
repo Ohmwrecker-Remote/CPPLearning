@@ -247,7 +247,6 @@ static bool judgeNumber(int number) {
     else return 0;
 }
 
-
 // //使用模板函数避免重复代码
 //void log(int x) {
 //    std::cout << x << std::endl;

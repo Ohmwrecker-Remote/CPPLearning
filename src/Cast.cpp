@@ -5,13 +5,13 @@ class SonOfCast;
 class Cast {
 public:
 	int a;
-	const float* b;
+	float* b;
 	double* c;
 	Cast() : a(10), b(nullptr), c(nullptr) {
 		// 执行非动态转换，没有运行时类检查来保证转换的安全性
 		double a1 = static_cast<double>(a);
 		// 只用于加上或除掉const属性，除了 const 或 volatile 属性之外，目标类型必须与源类型相同
-		float* b1 = const_cast<float*>(b);
+		const float* b1 = const_cast<const float*>(b);
 		// 把某种指针改为其他类型的指针,也可以把指针转换为整数
 		Cast* c1 = reinterpret_cast<Cast*>(c);
 	}
