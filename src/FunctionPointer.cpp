@@ -1,6 +1,4 @@
-#include <iostream>
-#include <array>
-#include <functional>
+#include "stdafx.h"
 
 static void printValue(std::string& x);
 static void ForEach(const std::array<std::string, 5>& arr, void(*func)(std::string&));
