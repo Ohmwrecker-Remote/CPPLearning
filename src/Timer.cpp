@@ -1,5 +1,4 @@
-#include <chrono>
-#include <iostream>
+#include "stdafx.h"
 
 // 计时器类
 // start_time记录开始时间，构造函数记录当前时间，析构函数计算并输出时间
