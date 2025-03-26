@@ -6,7 +6,7 @@ private:
 	int m_size;
 public:
 	CopyConstructor(const char* s) {
-		m_size = strlen(s) + 1;
+		m_size = (int)strlen(s) + 1;
 		m_strBuffer = new char[m_size];
 		memcpy(m_strBuffer, s, m_size);
 		m_strBuffer[m_size - 1] = '\0';
