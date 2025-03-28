@@ -116,7 +116,10 @@ int main() {
     ////Scope
     //{
     //    // 使用作用域指针，让即使是堆上分配的对象也会在作用域结束时自动释放
-    //    Scope e = new ScopeEntity();
+    //    {
+    //        Scope e1(new ScopeEntity());
+    //        e1.getPointer()->m_value = 10;
+    //    }
     //    // 也可以使用unique_ptr,当它离开作用域时，会自动释放对象
     //    std::unique_ptr<ScopeEntity> unique_ptr(ScopeEntity());
     //    // 使用make_unique方法初始化可以在构造函数出现异常时自动释放对象

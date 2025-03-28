@@ -2,7 +2,8 @@
 
 class ScopeEntity {
 public:
-    ScopeEntity() {
+    int m_value;
+    ScopeEntity(): m_value(0) {
         std::cout << "Entity created" << std::endl;
     }
 
@@ -24,5 +25,8 @@ public:
     // 当Scope对象被销毁时，会自动调用析构函数，释放内存
     ~Scope() {
         delete m_ptr;
+    }
+    ScopeEntity* getPointer() {
+        return m_ptr;
     }
 };
